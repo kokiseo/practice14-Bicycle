@@ -1,0 +1,264 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* END Reset Css*/
+
+body {
+    color: #383e45;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 10px auto;
+}
+
+.container ul li {
+    list-style: none;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header-content {
+    height: 40px;
+}
+
+.header-content .logo {
+    float: left;
+}
+
+.header-content .logo .logo-img{
+    height: 40px;
+    width: 120px;
+}
+
+.header-content ul {
+    float: right;
+    display: flex;
+    margin-top: 10px;
+}
+
+.header-content ul li a {
+    font-size: 0.8rem;
+    padding: 10px 15px;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.header-content ul li a:hover {
+    opacity: 0.6;
+}
+
+/* showcase */
+.showcase {
+    margin-bottom: 80px;
+}
+
+.showcase-img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* about */
+.container h1 {
+    display: inline-block;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #383e45;
+    border-bottom: #383e45 1px solid;
+    margin-bottom: 60px;
+}
+
+.about {
+    margin-bottom: 80px;
+}
+
+.about-head {
+    text-align: center;
+}
+
+.about-content {
+    margin: 0 200px;
+    display: flex;
+}
+
+.about-content .profile {
+    flex: 1;
+}
+
+.about-content .profile-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.about-content .profile-right {
+    flex: 3;
+}
+
+.about-content .profile-right h3 {
+    margin-bottom: 1em;
+}
+
+/* bicycle */
+#bicycle {
+    margin-bottom: 80px;
+}
+
+.bicycle-head {
+    text-align: center;
+}
+
+.bicycle-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bicycle-content .bicycle-item {
+    text-align: center;
+    flex-basis: 32%;
+}
+
+.bicycle-content .bicycle-item img {
+    width: 100%;
+}
+
+.bicycle-content .bicycle-item h3,
+.bicycle-content .bicycle-item p {
+    margin: 1em auto;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    margin: 10px auto;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+/* responsive */
+@media(max-width:580px) {
+    .showcase-img {
+        height: calc(100vh - 60px);
+    }
+
+    .about-content {
+        flex-direction: column;
+        margin: 0 ;
+        align-items: center;
+    }
+
+    .profile-right {
+        width: 80%;
+    }
+
+    .bicycle-content {
+        flex-direction: column;
+    }
+}
